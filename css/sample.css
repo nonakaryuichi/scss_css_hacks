@@ -1,3 +1,73 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0}input,select{vertical-align:middle}/*
-エクスクラメーション・マーク「!」付きコメント
-*/
+/*
+ * エクスクラメーション・マーク「!」付きコメント
+ *//*
+ * Default Style
+ */.targetElement{margin:10px 0 0 0;width:300px;height:20px}/*
+ * Star Hack
+ * target: IE6
+ * Validator: Success
+ */#starHack{background:#ccc}* html #starHack{background:#cc0000}/*
+ * UnderScore Hack
+ * target: IE6
+ * Validator: Error
+ */#underScoreHack{background:#ccc;_background:#cc0000}/*
+ * Star2 Hack
+ * target: IE6
+ * Validator: Error
+ */#star2Hack{background:#ccc}* html*#star2Hack{background:#cc0000}/*
+ * Important Hack
+ * target: IE6
+ * Validator: Success
+ */#importantHack{background:#ccc!important;background:#cc0000}/*
+ * The Owen Hack
+ * target: IE6
+ * Validator: Success
+ */#theOwenHack{background:#cc0000}head:first-child+body #theOwenHack{background:#ccc}/*
+ * IE6 Selector Hack
+ * target: IE6
+ * Validator: Success
+ */#ie6SelectorHack{background:#cc0000}html>body #ie6SelectorHack{background:#ccc}html+body #ie6SelectorHack{background:#ccc}/*
+ * Attr Selector Hack(Exclusion)
+ * target: IE6
+ * Validator: Success
+ */#attrSelectorHack{background:#cc0000}html[xmlns]>body #attrSelectorHack{background:#ccc}html[lang='\ja'] #attrSelectorHack{background:#ccc}/*
+ * Hash Hack
+ * target: IE 6,7
+ * Validator: Error
+ */#hashHack{background:#ccc;#background:#cc0000}/*
+ * Asterisk Hack
+ * target: IE 6,7
+ * Validator: Error
+ */#asteriskHack{background:#ccc;*background:#cc0000}/*
+ * IE67 Star Hack
+ * target: IE 6,7
+ * Validator: Error
+ */#ie67StarkHack{background:#ccc}html*#ie67StarHack{background:#cc0000}/*
+ * Star Plus Hack
+ * target: IE7
+ * Validator: Success
+ */#starPlusHack{background:#ccc}*+html #starPlusHack{background:#cc0000}/*
+ * IE7 Star Hack
+ * target: IE7
+ * Validator: Success
+ */#ie7StarHack{background:#ccc}*:first-child+html #ie7StarHack{background:#cc0000}/*
+ * Selector Hack(Exclusion)
+ * target: IE6,7,8
+ * Validator: Success
+ */#selectorHack{background:#cc0000}:root #selectorHack{background:#ccc}/*
+ * BackSlash 9 Hack
+ * target: IE6,7,8,9
+ * Validator:
+ */#backslash9Hack{background:#ccc;background:#cc0000\9}/*
+ * IE9 BackSlash 9 Hack
+ * target: IE9
+ * Validator:
+ */#ie9Backslash9Hack{background:#ccc}:not(:target) #ie9Backslash9Hack{background:#cc0000\9}/*
+ * Comment Hack(not work)
+ * target: IE6
+ * Validator: Success
+ */#commentHack{background:#ccc;background:#cc0000}/*
+ * IE9 Hack(not work)
+ * target: IE9
+ * Validator: Success
+ */#ie9Hack{background:#ccc}
